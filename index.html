@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Management of Securities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Portfolio Management of Securities</h1>
+        <div class="stock-info">
+            <h2>Stock Information</h2>
+            <ul>
+                <li><span class="stock-name">AAPL:</span> Apple Inc.</li>
+                <li><span class="stock-name">AMZN:</span> Amazon.com Inc.</li>
+                <li><span class="stock-name">GOOGL:</span> Alphabet Inc. (Google)</li>
+                <li><span class="stock-name">MSFT:</span> Microsoft Corporation</li>
+                <li><span class="stock-name">TSLA:</span> Tesla Inc.</li>
+            </ul>
+        </div>
+        <div class="correlation-calculator">
+            <h2>Calculate Correlation</h2>
+            <label for="stock1">Select Stock 1:</label>
+            <select id="stock1">
+                <option value="AAPL">AAPL</option>
+                <option value="AMZN">AMZN</option>
+                <option value="GOOGL">GOOGL</option>
+                <option value="MSFT">MSFT</option>
+                <option value="TSLA">TSLA</option>
+            </select>
+            <label for="stock2">Select Stock 2:</label>
+            <select id="stock2">
+                <option value="AAPL">AAPL</option>
+                <option value="AMZN">AMZN</option>
+                <option value="GOOGL">GOOGL</option>
+                <option value="MSFT">MSFT</option>
+                <option value="TSLA">TSLA</option>
+            </select>
+            <button onclick="calculateCorrelation()">Calculate Correlation</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
